@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Used Car Checker Pro UK | Motor Vehicle Expert</title>
+<meta name="description" content="Free UK used car checker app. Check mileage, MOT advisories, service history, warning lights, repair risk and whether to buy, negotiate or walk away." />
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+
+<link rel="canonical" href="https://motorvehicleexpert.co.uk/used-car-checker-pro.html" />
+<link rel="icon" type="image/png" href="favicon.png" />
+<link rel="stylesheet" href="style.css" />
+
+<style>
+.app-wrap{max-width:1100px;margin:auto;padding:30px 16px}
+.app-box{background:#fff;border:1px solid #e5e7eb;border-radius:24px;padding:24px;box-shadow:0 18px 45px rgba(15,23,42,.08)}
+.app-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.app-field label{display:block;font-weight:800;margin-bottom:8px;color:#111827}
+.app-field input,.app-field select,.app-field textarea{
+width:100%;padding:14px;border:1px solid #d1d5db;border-radius:14px;font-size:16px
+}
+.app-field textarea{min-height:90px}
+.app-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.result-box{margin-top:24px;border-radius:22px;padding:22px;background:#f8fafc;border:1px solid #e5e7eb}
+.score-big{font-size:48px;font-weight:900;color:#0f172a}
+.badge{display:inline-block;padding:8px 12px;border-radius:999px;font-weight:800;margin:4px 4px 4px 0}
+.badge.green{background:#dcfce7;color:#166534}
+.badge.amber{background:#fef3c7;color:#92400e}
+.badge.red{background:#fee2e2;color:#991b1b}
+.report-list li{margin:10px 0}
+@media(max-width:760px){.app-grid{grid-template-columns:1fr}.score-big{font-size:38px}}
+</style>
+</head>
+
+<body class="mve-premium">
+
+<header class="topbar">
+<div class="container nav">
+<a href="/" class="brand logo-brand" aria-label="Motor Vehicle Expert home">
+<img src="logo.png" alt="Motor Vehicle Expert Logo" class="site-logo" />
+<span class="brand-text">Motor Vehicle Expert</span>
+</a>
+
+<nav class="nav-links" aria-label="Primary navigation">
+<a href="/">Home</a>
+<a href="guides.html">Guides</a>
+<a href="diagnostics.html">Diagnostics</a>
+<a href="warning-lights.html">Warning Lights</a>
+<a href="diagnostic-app.html">Diagnostic App</a>
+<a href="contact.html" class="cta cta-secondary">Contact</a>
+</nav>
+</div>
+</header>
+
+<main>
+
+<section class="premium-hero">
+<div class="container premium-hero-grid">
+<div class="hero-copy">
+<span class="eyebrow">Used car buying app</span>
+<h1>Used Car Checker Pro UK</h1>
+<p class="lead">
+Check a used car before buying. This free tool looks at mileage, age, MOT advisories, service history, warning lights, seller risk and repair concerns, then gives a simple buy, negotiate or walk away recommendation.
+</p>
+
+<div class="article-meta">
+<span>📅 Updated June 2026</span>
+<span>🇬🇧 UK Used Car Checker</span>
+<span>🛠 Mechanic-Style Advice</span>
+</div>
+
+<div class="hero-actions">
+<a class="cta cta-primary" href="#app">Start Check</a>
+<a class="cta cta-ghost" href="used-car-buying-guides.html">Used Car Guides</a>
+</div>
+</div>
+
+<div class="hero-image">
+<img src="used-car-buying-guides-hero.png"
+alt="Used Car Checker Pro UK app"
+loading="eager"
+fetchpriority="high"
+decoding="sync"
+width="1600"
+height="900" />
+</div>
+</div>
+</section>
+
+<section id="app">
+<div class="app-wrap">
+<div class="app-box">
+
+<h2>Used Car Checker Pro</h2>
+<p class="muted">Enter the details below. The result is guidance only and does not replace a physical inspection or vehicle history check.</p>
+
+<div class="app-grid">
+
+<div class="app-field">
+<label>Vehicle age</label>
+<select id="age">
+<option value="1">0–3 years</option>
+<option value="2">4–6 years</option>
+<option value="3">7–10 years</option>
+<option value="4">10+ years</option>
+</select>
+</div>
+
+<div class="app-field">
+<label>Mileage</label>
+<input id="mileage" type="number" placeholder="Example: 85000" />
+</div>
+
+<div class="app-field">
+<label>Service history</label>
+<select id="service">
+<option value="0">Full service history</option>
+<option value="10">Part service history</option>
+<option value="25">No service history</option>
+</select>
+</div>
+
+<div class="app-field">
+<label>MOT advisories</label>
+<select id="advisories">
+<option value="0">No advisories</option>
+<option value="10">Minor advisories</option>
+<option value="20">Repeated advisories</option>
+<option value="30">Serious advisories</option>
+</select>
+</div>
+
+<div class="app-field">
+<label>Warning lights</label>
+<select id="warnings">
+<option value="0">No warning lights</option>
+<option value="20">Amber warning light</option>
+<option value="35">Red/flashing warning light</option>
+</select>
+</div>
+
+<div class="app-field">
+<label>Test drive</label>
+<select id="drive">
+<option value="0">Drives well</option>
+<option value="15">Minor noise or vibration</option>
+<option value="30">Jerking, smoke, overheating or power loss</option>
+</select>
+</div>
+
+<div class="app-field">
+<label>Seller confidence</label>
+<select id="seller">
+<option value="0">Good paperwork and clear answers</option>
+<option value="15">Some missing paperwork</option>
+<option value="30">Pressure selling or unclear story</option>
+</select>
+</div>
+
+<div class="app-field">
+<label>Price compared with similar cars</label>
+<select id="price">
+<option value="0">Fair price</option>
+<option value="-8">Cheap but believable</option>
+<option value="15">Too cheap / suspicious</option>
+<option value="10">Overpriced</option>
+</select>
+</div>
+
+</div>
+
+<div class="app-field" style="margin-top:18px">
+<label>Notes</label>
+<textarea id="notes" placeholder="Example: 2 owners, long MOT, minor tyre advisory, slight clutch smell..."></textarea>
+</div>
+
+<div class="app-actions">
+<button class="cta cta-primary" onclick="checkCar()">Check Used Car</button>
+<button class="cta cta-ghost" onclick="resetApp()">Reset</button>
+</div>
+
+<div id="result" class="result-box" style="display:none"></div>
+
+</div>
+</div>
+</section>
+
+</main>
+
+<footer>
+<div class="container footer-grid">
+<div>
+<strong>Motor Vehicle Expert</strong>
+<div>Practical car advice and maintenance information for UK drivers</div>
+</div>
+
+<div>© 2026 Motor Vehicle Expert. All rights reserved.</div>
+
+<div class="footer-links">
+<a href="guides.html">Guides</a>
+<a href="diagnostics.html">Diagnostics</a>
+<a href="warning-lights.html">Warning Lights</a>
+<a href="used-car-buying-guides.html">Used Car Buying Guides</a>
+<a href="diagnostic-app.html">Diagnostic App</a>
+<a href="privacy-policy.html">Privacy Policy</a>
+<a href="disclaimer.html">Disclaimer</a>
+<a href="contact.html">Contact</a>
+</div>
+</div>
+</footer>
+
+<nav class="mobile-bottom-nav" aria-label="Mobile quick navigation">
+<a href="/">Home</a>
+<a href="diagnostic-app.html">Diagnose</a>
+<a href="warning-lights.html">Lights</a>
+<a href="mot-failure-guides.html">MOT</a>
+<a href="guides.html">Guides</a>
+</nav>
+
+<script>
+function checkCar(){
+  const mileage = Number(document.getElementById("mileage").value || 0);
+  const age = Number(document.getElementById("age").value);
+  const service = Number(document.getElementById("service").value);
+  const advisories = Number(document.getElementById("advisories").value);
+  const warnings = Number(document.getElementById("warnings").value);
+  const drive = Number(document.getElementById("drive").value);
+  const seller = Number(document.getElementById("seller").value);
+  const price = Number(document.getElementById("price").value);
+  const notes = document.getElementById("notes").value.trim();
+
+  let risk = service + advisories + warnings + drive + seller + price;
+
+  if(age === 1 && mileage > 45000) risk += 10;
+  if(age === 2 && mileage > 75000) risk += 10;
+  if(age === 3 && mileage > 110000) risk += 12;
+  if(age === 4 && mileage > 140000) risk += 15;
+  if(mileage === 0) risk += 8;
+
+  let score = Math.max(0, Math.min(100, 100 - risk));
+
+  let verdict = "";
+  let badge = "";
+  let advice = [];
+
+  if(score >= 75){
+    verdict = "Good candidate";
+    badge = "green";
+    advice.push("This car looks worth viewing or considering, but still check MOT history, service records and test drive behaviour.");
+    advice.push("Use the inspection checklist before paying a deposit.");
+  } else if(score >= 50){
+    verdict = "Negotiate or inspect carefully";
+    badge = "amber";
+    advice.push("There are some risk signs. Do not buy without checking paperwork, MOT advisories and possible repair costs.");
+    advice.push("Use any faults to negotiate the price.");
+  } else {
+    verdict = "High risk / walk away";
+    badge = "red";
+    advice.push("This car has several warning signs. Unless the price is very low and repairs are understood, walking away may be safer.");
+    advice.push("Do not rely on the seller saying it only needs a reset or cheap fix.");
+  }
+
+  if(warnings >= 20) advice.push("Warning lights should be diagnosed before buying.");
+  if(service >= 25) advice.push("No service history increases risk and should reduce the price.");
+  if(advisories >= 20) advice.push("Repeated or serious MOT advisories can become expensive repairs.");
+  if(drive >= 30) advice.push("Poor test drive symptoms are a major red flag.");
+
+  document.getElementById("result").style.display = "block";
+  document.getElementById("result").innerHTML = `
+    <span class="badge ${badge}">${verdict}</span>
+    <div class="score-big">${score}/100</div>
+    <p class="muted"><strong>Used Car Risk Score:</strong> ${100 - score}/100</p>
+
+    <h3>Recommendation</h3>
+    <ul class="report-list">
+      ${advice.map(item => `<li>${item}</li>`).join("")}
+    </ul>
+
+    <h3>Next steps</h3>
+    <div class="category-list">
+      <a href="used-car-inspection-checklist.html">Inspection checklist</a>
+      <a href="how-to-check-mot-history-before-buying-car.html">Check MOT history</a>
+      <a href="should-you-buy-a-car-with-advisories.html">MOT advisories guide</a>
+      <a href="best-mileage-buy-used-car-uk.html">Mileage guide</a>
+      <a href="common-used-car-scams.html">Used car scams</a>
+    </div>
+
+    ${notes ? `<h3>Your notes</h3><p class="muted">${notes}</p>` : ""}
+  `;
+}
+
+function resetApp(){
+  document.getElementById("mileage").value = "";
+  document.getElementById("notes").value = "";
+  document.getElementById("result").style.display = "none";
+}
+</script>
+
+</body>
+</html>
