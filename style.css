@@ -609,3 +609,11 @@ footer{
     height:42px;
   }
 }
+
+/* APP TEXT FIX */
+
+.app-box p,
+.app-box .muted{
+  color:#1e293b !important;
+  font-weight:500;
+}
